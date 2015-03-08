@@ -1,0 +1,154 @@
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.checkintalk.m.android.WelcomeActivity"
+    tools:ignore="MergeRootFrame">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top">
+
+        <ViewFlipper
+            android:id="@+id/viewflipper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:flipInterval="2000"
+            android:layout_centerInParent="true" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+                <ImageView
+                    android:src="@drawable/img1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/str_img1"
+                    android:adjustViewBounds="true"
+                    android:scaleType = "centerCrop" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="@string/str_img1"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp">
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+                <ImageView
+                    android:src="@drawable/img2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/str_img2"
+                    android:adjustViewBounds="true"
+                    android:scaleType = "centerCrop" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="@string/str_img2"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp">
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+                <ImageView
+                    android:src="@drawable/img3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/str_img3"
+                    android:adjustViewBounds="true"
+                    android:scaleType = "centerCrop" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="@string/str_img3"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp">
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+                <ImageView
+                    android:src="@drawable/img4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/str_img4"
+                    android:adjustViewBounds="true"
+                    android:scaleType = "centerCrop" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="@string/str_img4"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp">
+                </TextView>
+            </RelativeLayout>
+        </ViewFlipper>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60px"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/b_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/registerbuttonbox"
+            android:clickable="true"
+            android:layout_marginLeft="60px"
+            android:text="@string/register"
+            android:layout_alignParentLeft="true"
+            android:textAlignment="center"
+            android:textColor="#01A9DB"
+            android:textSize="14pt"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/loginbuttonbox"
+            android:clickable="true"
+            android:layout_marginRight="60px"
+            android:text="@string/login"
+            android:layout_alignParentRight="true"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="14pt"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</FrameLayout>
+

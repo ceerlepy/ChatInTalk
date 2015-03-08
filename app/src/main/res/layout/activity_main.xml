@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.checkintalk.m.android.MainActivity" >
+
+    <fragment
+          android:id="@+id/map"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+	 <Button
+	     android:id="@+id/dialogButton"
+	     android:layout_width="40dp"
+	     android:layout_height="40dp"
+	     android:layout_marginBottom="10dip"
+	     android:layout_marginLeft="10dip"
+	     android:layout_x="160dp"
+	     android:layout_y="5dp"
+	     android:textColor="#01A9DB"
+	     android:textStyle="bold"
+	     android:textSize="24sp"
+	     android:text="@string/chatbutton"
+	     android:gravity="center"
+         android:layout_alignParentTop="true"
+	     android:background="@drawable/dialogbuttonbox"
+	     android:textAlignment="center" />
+    
+</RelativeLayout>
