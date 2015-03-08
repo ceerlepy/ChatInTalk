@@ -73,6 +73,8 @@ public class WelcomeActivity extends FragmentActivity {
 					.add(R.id.container, new PlaceholderFragment()).commit();
 		}*/
 
+        //DEneme
+
         try {
             user = Util.getInstance().readUserFromLocal(getFilesDir());
             createLoginDialog();
