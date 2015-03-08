@@ -26,7 +26,7 @@ public class OnSwipeTouchListener implements OnTouchListener {
     public boolean onTouch(View v, MotionEvent event) {
         return gestureDetector.onTouchEvent(event);
     }
-
+    //ok
     private final class GestureListener extends SimpleOnGestureListener {
 
         private static final int SWIPE_DISTANCE_THRESHOLD = 100;
